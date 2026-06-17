@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a=parseFloat(prompt("enter a number:"))
+        let b=parseFloat(prompt("enter a number:"))
+
+        if(a>b){
+            let c=prompt("which operation (+ ,- ,* , /):")
+
+            if(c=='+'){
+                alert("addition of numbers:"+(a+b))
+            }else if(c=='-'){
+                alert("subtraction of numbers:"+(a-b))
+            }else if(c=='*'){
+                alert("multiplication of numbers:"+(a*b))
+            }else if(c=='/'){
+                alert("division of numbers"+(a/b))
+            }else{
+                alert("invalid input")
+            }
+        }else{
+            alert("a is less than b")
+        }
+    </script>
+</body>
+</html>

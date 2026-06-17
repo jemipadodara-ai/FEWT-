@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n= parseFloat(prompt("enter a number:"))
+        let temp=n,rem=0,digit=0,temp2=n,p,sum=0
+        while(temp>0){
+            digit++
+            temp=parseInt(temp/10)
+        }
+        while(temp2>0){
+            p=1
+            rem=temp2%10
+            for(let i=1;i<=digit;i++){
+                p=p*rem
+            }
+            sum=sum+p
+            temp2=parseInt(temp2/10)
+        }
+        if(sum==n){
+            alert("amgstrong")
+        }else{
+            alert("not")
+        }
+    </script>
+</body>
+</html>
